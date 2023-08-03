@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1aecb6a27a.js" crossorigin="anonymous"></script>
+    <title>Suculentas y Detalles</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html"><img src="../img/logo.jpg" alt="logo" height="300px" width="300px"></a>
+        </div>
+        <nav class="navegacion">
+            <ul class="navegacion__enlaces">
+                <li><a class="navegacion__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="navegacion__enlace" href="shop.html">Shop</a></li>
+                <li><a class="navegacion__enlace" href="blog.html">Blog</a></li>
+                <li><a class="navegacion__enlace activo" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="titulo">Contactanos</h2>
+
+        <form action="" class="formulario">
+            <fieldset>
+                <h4>Escribenos y nos contactaremos contigo</h4>
+                <div class="formulario__campos">
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="nombre">Nombre</label>
+                        <input class="formulario__input" type="text" name="nombre" id="nombre" placeholder="Ej. Ariel">
+                    </div>
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="apellido">Apellido</label>
+                        <input class="formulario__input" type="text" name="apellido" id="apellido" placeholder="Ej. Hernandez">
+                    </div>
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="mail">Email</label>
+                        <input class="formulario__input" type="email" name="mail" id="mail" placeholder="Ej. ariel@correo.com">
+                    </div>
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="telefono">Telefono</label>
+                        <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="11-1234-5678">
+                    </div>
+                </div>
+                <label class="formulario__label" for="consulta">Tu Consulta</label>
+                <textarea placeholder="Comentanos tu Consulta" class="formulario__textarea" name="consulta" id="consulta" cols="60" rows="10"></textarea>
+            </fieldset>
+            <div class="formulario__botones">
+                <input class="formulario__submit" type="submit" value="Enviar">
+                <input class="formulario__submit" type="reset" value="Borrar">
+            </div>
+            
+
+        </form>
+    </main>
+    <footer>
+        <nav class="navegacion-footer">
+            <ul class="navegacion-footer__enlaces">
+                <li><a class="navegacion-footer__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="navegacion-footer__enlace" href="shop.html">Shop</a></li>
+                <li><a class="navegacion-footer__enlace" href="blog.html">Blog</a></li>
+                <li><a class="navegacion-footer__enlace" href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <ul class="social">
+            <li><a href=""><i class="fa-solid fa-message" style="color: #000000;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+        </ul>
+        <p class="copyright">Todos los Derechos Reservados &copy; 2023. Ariel Hernandez</p>
+    </footer>
+</body>
+</html>
