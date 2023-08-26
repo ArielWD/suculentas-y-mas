@@ -8,125 +8,124 @@
       src="https://kit.fontawesome.com/1aecb6a27a.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>Suculentas y Detalles</title>
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header navbar navbar-expand-lg">
       <div class="header__logo">
-        <a href="../index.html"
-          ><img src="../img/logo.jpg" alt="logo" height="300px" width="300px"
-        /></a>
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="logo"></a>
       </div>
-      <nav class="navegacion">
-        <ul class="navegacion__enlaces">
-          <li>
-            <a class="navegacion__enlace" href="nosotros.html"
-              >Sobre Nosotros</a
-            >
-          </li>
-          <li><a class="navegacion__enlace activo" href="#">Shop</a></li>
-          <li><a class="navegacion__enlace" href="blog.html">Blog</a></li>
-          <li>
-            <a class="navegacion__enlace" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navegacion collapse navbar-collapse p-2" id="navbarNav">
+          <ul class="navegacion__enlaces navbar-nav justify-content-around align-items-center gap-3 gap-lg-0">
+              <li class="nav-item"><a class="navegacion__enlace" href="../pages/nosotros.html">Sobre Nosotros</a></li>
+              <li class="nav-item"><a class="navegacion__enlace activo" href="../pages/shop.html">Shop</a></li>
+              <li class="nav-item"><a class="navegacion__enlace" href="../pages/blog.html">Blog</a></li>
+              <li class="nav-item"><a class="navegacion__enlace" href="../pages/contacto.html">Contacto</a></li>
+          </ul>
       </nav>
-    </header>
+  </header>
     <main>
       <h2 class="titulo">Shop</h2>
-      <section class="shop">        
-        <div class="shop__item">
-            <img src="../img/cotyledon.jpeg" alt="Cotyledon Tomentosa" />
-            <div class="shop__texto">
-                <h3>Cotyledon Tomentosa</h3>
-                <p class="shop__descripcion">
-                    Cotyledon tomentosa también conocida como "Patita de Oso" o "Garrita de oso", es una suculenta originaria de Sudáfrica.
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 30</p>
-            </div>
-            <div class="shop__enlaces">
+      <section class="shop">
+        <div class="card" style="width: 18rem;">
+          <img src="../img/cotyledon.jpeg" class="card-img-top" alt="Cotyledon Tomentosa">
+          <div class="shop__item card-body">
+            <h4 class="card-title">Cotyledon Tomentosa</h4>
+            <p class="card-text">Cotyledon tomentosa también conocida como "Patita de Oso" o
+              "Garrita de oso", es una suculenta originaria de Sudáfrica.</p>
+              <p class="card-text shop__precio"><span>-50%</span> U$D 30</p>
+              <div class="shop__enlaces">
                 <a href="#">Mas...</a>
                 <a href="#">Agregar al Carro</a>
-            </div>
-        </div>
-        <div class="shop__item">
-            <img src="../img/rusbyi.jpeg" alt="Graptopetalum Rusbyi" />
-            <div class="shop__texto">
-                <h3>Graptopetalum Rusbyi</h3>
-                <p class="shop__descripcion">
-                    Graptopetalum rusbyi es una suculenta perteneciente a la familia
-                    Crassulaceae originaria de México y Arizona
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 15</p>
-            </div>
+              </div>
+          </div>
+        </div>  
+        <div class="card" style="width: 18rem;">
+          <img src="../img/rusbyi.jpeg" class="card-img-top" alt="Graptopetalum Rusbyi" />
+          <div class="shop__item card-body">
+            <h4 class="card-title">Graptopetalum Rusbyi</h4>
+            <p class="card-text">
+              Graptopetalum rusbyi es una suculenta perteneciente a la familia
+              Crassulaceae originaria de México y Arizona
+            </p>
+            <p class="card-text shop__precio"><span>-50%</span> U$D 15</p>
             <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+              <a href="#">Mas...</a>
+              <a href="#">Agregar al Carro</a>
             </div>
- 
+          </div>
         </div>
-        <div class="shop__item">
-            <img src="../img/crassula.jpeg" alt="Crassula Capitella Campfire" />
-            <div class="shop__texto">
-                <h3>Crassula Capitella Campfire</h3>
-                <p class="shop__descripcion">
-                    Crassula rubricaulis es una planta perenne originaria de Sudáfrica.Cuidados. Plagas y Enfermedades. Reproducción.
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 20</p>
-            </div>
+        <div class="card" style="width: 18rem;"">
+          <img src="../img/crassula.jpeg" class="card-img-top" alt="Crassula Capitella Campfire" />
+          <div class="shop__item card-body">
+            <h4 class="card-title">Crassula Capitella</h4>
+            <p class="card-text">
+              Crassula rubricaulis es una planta perenne originaria de
+              Sudáfrica.Cuidados. Plagas y Enfermedades. Reproducción.
+            </p>
+            <p class="card-text shop__precio"><span>-50%</span> U$D 20</p>
             <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+              <a href="#">Mas...</a>
+              <a href="#">Agregar al Carro</a>
             </div>
- 
+          </div>
         </div>
-        <div class="shop__item">
-            <img src="../img/topsy.jpeg" alt="Graptoveria Topsy Debbie" />
-            <div class="shop__texto">
-                <h3>Graptoveria Topsy Debbie</h3>
-                <p class="shop__descripcion">
-                    Graptoveria Topsy Debbie o Graptoveria Lilac Spoons o Graptoveria Cupido, es un híbrido. Cuidados. Reproducción.
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 10</p>
-            </div>
+        <div class="card" style="width: 18rem;"">
+          <img src="../img/topsy.jpeg" class="card-img-top" alt="Graptoveria Topsy Debbie" />
+          <div class="shop__item card-body">
+            <h4 class="card-title">Graptoveria Topsy</h4>
+            <p class="card-text">
+              Graptoveria Topsy Debbie o Graptoveria Lilac Spoons o Graptoveria
+              Cupido, es un híbrido. Cuidados. Reproducción.
+            </p>
+            <p class="card-text shop__precio"><span>-50%</span> U$D 10</p>
             <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+              <a href="#">Mas...</a>
+              <a href="#">Agregar al Carro</a>
             </div>
- 
+          </div>
         </div>
-        <div class="shop__item">
-            <img src="../img/dark-vader.jpeg" alt="Echeveria 'Dark Vader'" />
-            <div class="shop__texto">
-                <h3>Echeveria 'Dark Vader'</h3>
-                <p class="shop__descripcion">
-                    Echeveria, comúnmente llamada como oreja de burro, es una especie de suculenta de la familia crasulácea y es originaria de México.
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 10</p>
-            </div>
+        <div class="card" style="width: 18rem;"">
+          <img src="../img/dark-vader.jpeg" class="card-img-top" alt="Echeveria 'Dark Vader'" />
+          <div class="shop__item card-body">
+            <h4 class="card-title">Echeveria 'Dark Vader'</h4>
+            <p class="card-text">
+              Echeveria, comúnmente llamada como oreja de burro, es una especie
+              de suculenta de la familia crasulácea.
+            </p>
+            <p class="card-text shop__precio"><span>-50%</span> U$D 10</p>
             <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+              <a href="#">Mas...</a>
+              <a href="#">Agregar al Carro</a>
             </div>
- 
+          </div>
         </div>
-        <div class="shop__item">
-            <img src="../img/runyonii.jpeg" alt="Echeveria Runyonii" />
-            <div class="shop__texto">
-                <h3>Echeveria Runyonii</h3>
-                <p class="shop__descripcion">
-                    Echeveria runyonii es una suculenta originaria de México. Es una planta de porte mediano. Caracteristicas, Cuidados, Plagas, Reproducción.
-                </p>
-                <p class="shop__precio"><span>-50%</span> U$D 25</p>
-            </div>
+        <div class="card" style="width: 18rem;"">
+          <img src="../img/runyonii.jpeg" class="card-img-top" alt="Echeveria Runyonii" />
+          <div class="shop__item card-body">
+            <h4 class="card-title">Echeveria Runyonii</h4>
+            <p class="card-text">
+              Echeveria runyonii es una suculenta originaria de México. Es una
+              planta de porte mediano. Caracteristicas, Cuidados, Plagas,
+              Reproducción.
+            </p>
+            <p class="card-text shop__precio"><span>-50%</span> U$D 25</p>
             <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+              <a href="#">Mas...</a>
+              <a href="#">Agregar al Carro</a>
             </div>
- 
+          </div>
         </div>
-
       </section>
     </main>
     <footer>
@@ -174,5 +173,10 @@
         Todos los Derechos Reservados &copy; 2023. Ariel Hernandez
       </p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
