@@ -463,6 +463,9 @@ a{
 }
 
 @media (max-width: 992px) {
+    .formulario{
+        width: 90%;
+    }
     .formulario__campos{
         flex-direction: column;
     }
