@@ -460,5 +460,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+
+@media (max-width: 992px) {
+    .formulario__campos{
+        flex-direction: column;
+    }
+    .formulario__campo{
+        width: 100%;
+    }
 }
