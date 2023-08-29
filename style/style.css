@@ -472,4 +472,7 @@ a{
     .formulario__campo{
         width: 100%;
     }
+    .formulario__submit{
+        padding: 5px 15px;
+    }
 }
