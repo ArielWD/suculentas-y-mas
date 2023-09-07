@@ -1,0 +1,125 @@
+/* Imagenes carrousel */
+.carrousel{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: center; 
+
+    @include desktop{
+        width: 100%;
+    }
+}
+
+/* Frase separacion carrousel info */
+.frase{
+    width: 70%;
+    margin: 70px auto 40px auto;
+    @include desktop{
+        width: 90%;
+    }
+
+    &__texto{
+        text-align: center;
+        font-size: 50px;
+        line-height: 1.8;
+        margin: 0;
+        color: $principal-oscuro;
+        font-family: $fuente-secundaria;
+        @include desktop{
+            font-size: 30px;
+        }
+        @include telefono{
+            font-size: 20px;
+        }
+    }
+}
+
+/* barra horizontal */
+.hr{
+    width: 95%;
+    height: 1px;
+    margin: auto;
+    background-color: $gris-oscuro;
+}
+
+/* seccion de video y blog */
+.informacion{
+    display: flex;
+    width: 90%;
+    margin: 70px auto 40px auto;
+    text-align: center;
+    gap: 15px;
+    @include desktop{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    &__blog{
+        width: 33%;
+        border-radius: 20px;
+        background-color: $secundario;
+        @include desktop{
+            width: 90%;
+        }
+    }
+    &__titulo{
+        font-family: $fuente-principal;
+        font-weight: 400;
+        font-size: 30px;
+        margin: 20px;
+    }
+    /* video iframe */
+    &__video{
+        width: 66%;
+        background-color: $secundario;
+        border-radius: 20px;
+        @include desktop{
+            width: 90%;
+            height: 600px;
+        }
+    }
+    &__iframe{
+        width: 80%;
+        height: 80%;
+        margin-top: 15px;
+        @include desktop{
+            height: 450px;
+        }
+    }
+}
+/* blogs */
+.blog__entrada{
+    width: 85%;
+    display: flex;
+    margin: auto auto 20px auto;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 500ms ease;
+    @include desktopXXL{
+        flex-direction: column;
+        align-items: center;
+    }
+    &:hover{
+        background-color: $principal;
+    }
+    img{
+        width: 50%;
+        object-fit: contain;
+        @include desktopXXL{
+            width: 95%;
+        }
+    }
+    
+    h3{
+        text-align: start;
+        font-size: 15px;
+        font-weight: bold;
+        color: $negro;
+    }
+    p{
+        text-align: start;
+        font-size: 15px;
+        color: $negro;
+    }
+}

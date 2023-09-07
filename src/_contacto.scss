@@ -1,0 +1,73 @@
+/* formulario */
+.formulario{
+    width: 60%;
+    margin: auto auto 40px auto;
+    @include desktop{
+        width: 90%;
+    }
+    fieldset{
+        padding: 40px;
+        border-radius: 10px;
+        border: none;
+        background-color: $secundario-claro;
+        h4{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 400;
+        }
+    }
+    &__campos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        @include desktop{
+            flex-direction: column;
+        }
+    }
+    &__campo{
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        @include desktop{
+            width: 100%;
+        }
+    }
+    &__label{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__input{
+        width: 95%;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid $gris-oscuro;
+        border-radius: 10px;
+    }
+    &__textarea{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+        border: 1px solid $gris-oscuro;
+        border-radius: 10px;
+    }
+    &__submit{
+        @extend .boton;
+        padding: 10px 25px;
+        margin: 15px;
+        border: none;
+        &--reset{
+            background-color: darken(red , 30%);
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+    &__botones{
+        display: flex;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+}

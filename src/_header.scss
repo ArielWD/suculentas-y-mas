@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    margin: 30px auto 30px auto;
+    width: 90%;
+    &__logo{
+        width: 10%;
+        height: 90%;
+        margin-right: 0;
+        @include tablet{
+            width: 20%;
+        }
+        img{
+            width: 110%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }   
+}

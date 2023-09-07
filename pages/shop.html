@@ -14,6 +14,9 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Suculentas y Detalles</title>
     <link rel="stylesheet" href="../style/style.css" />
   </head>
@@ -37,7 +40,7 @@
     <main>
       <h2 class="titulo">Shop</h2>
       <section class="shop">
-        <div class="card" style="width: 18rem;">
+        <div class="card shop__card">
           <img src="../img/cotyledon.jpeg" class="card-img-top" alt="Cotyledon Tomentosa">
           <div class="shop__item card-body">
             <h4 class="card-title">Cotyledon Tomentosa</h4>
@@ -45,12 +48,12 @@
               "Garrita de oso", es una suculenta originaria de Sudáfrica.</p>
               <p class="card-text shop__precio"><span>-50%</span> U$D 30</p>
               <div class="shop__enlaces">
-                <a href="#">Mas...</a>
-                <a href="#">Agregar al Carro</a>
+                <a class="boton" href="#">Mas...</a>
+                <a class="boton" href="#">Agregar al Carro</a>
               </div>
           </div>
         </div>  
-        <div class="card" style="width: 18rem;">
+        <div class="card shop__card">
           <img src="../img/rusbyi.jpeg" class="card-img-top" alt="Graptopetalum Rusbyi" />
           <div class="shop__item card-body">
             <h4 class="card-title">Graptopetalum Rusbyi</h4>
@@ -60,12 +63,12 @@
             </p>
             <p class="card-text shop__precio"><span>-50%</span> U$D 15</p>
             <div class="shop__enlaces">
-              <a href="#">Mas...</a>
-              <a href="#">Agregar al Carro</a>
+              <a class="boton" href="#">Mas...</a>
+              <a class="boton" href="#">Agregar al Carro</a>
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;"">
+        <div class="card shop__card"">
           <img src="../img/crassula.jpeg" class="card-img-top" alt="Crassula Capitella Campfire" />
           <div class="shop__item card-body">
             <h4 class="card-title">Crassula Capitella</h4>
@@ -75,12 +78,12 @@
             </p>
             <p class="card-text shop__precio"><span>-50%</span> U$D 20</p>
             <div class="shop__enlaces">
-              <a href="#">Mas...</a>
-              <a href="#">Agregar al Carro</a>
+              <a class="boton" href="#">Mas...</a>
+              <a class="boton" href="#">Agregar al Carro</a>
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;"">
+        <div class="card shop__card"">
           <img src="../img/topsy.jpeg" class="card-img-top" alt="Graptoveria Topsy Debbie" />
           <div class="shop__item card-body">
             <h4 class="card-title">Graptoveria Topsy</h4>
@@ -90,12 +93,12 @@
             </p>
             <p class="card-text shop__precio"><span>-50%</span> U$D 10</p>
             <div class="shop__enlaces">
-              <a href="#">Mas...</a>
-              <a href="#">Agregar al Carro</a>
+              <a class="boton" href="#">Mas...</a>
+              <a class="boton" href="#">Agregar al Carro</a>
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;"">
+        <div class="card shop__card"">
           <img src="../img/dark-vader.jpeg" class="card-img-top" alt="Echeveria 'Dark Vader'" />
           <div class="shop__item card-body">
             <h4 class="card-title">Echeveria 'Dark Vader'</h4>
@@ -105,12 +108,12 @@
             </p>
             <p class="card-text shop__precio"><span>-50%</span> U$D 10</p>
             <div class="shop__enlaces">
-              <a href="#">Mas...</a>
-              <a href="#">Agregar al Carro</a>
+              <a class="boton" href="#">Mas...</a>
+              <a class="boton" href="#">Agregar al Carro</a>
             </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;"">
+        <div class="card shop__card"">
           <img src="../img/runyonii.jpeg" class="card-img-top" alt="Echeveria Runyonii" />
           <div class="shop__item card-body">
             <h4 class="card-title">Echeveria Runyonii</h4>
@@ -121,8 +124,8 @@
             </p>
             <p class="card-text shop__precio"><span>-50%</span> U$D 25</p>
             <div class="shop__enlaces">
-              <a href="#">Mas...</a>
-              <a href="#">Agregar al Carro</a>
+              <a class="boton" href="#">Mas...</a>
+              <a class="boton" href="#">Agregar al Carro</a>
             </div>
           </div>
         </div>
@@ -131,42 +134,24 @@
     <footer>
       <nav class="navegacion-footer">
         <ul class="navegacion-footer__enlaces">
-          <li>
-            <a class="navegacion-footer__enlace" href="nosotros.html"
-              >Sobre Nosotros</a
-            >
+          <li><a class="navegacion-footer__enlace" href="nosotros.html">Sobre Nosotros</a>
           </li>
           <li><a class="navegacion-footer__enlace" href="#">Shop</a></li>
           <li>
             <a class="navegacion-footer__enlace" href="blog.html">Blog</a>
           </li>
-          <li>
-            <a class="navegacion-footer__enlace" href="contacto.html"
-              >Contacto</a
-            >
+          <li><a class="navegacion-footer__enlace" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
       <ul class="social">
-        <li>
-          <a href=""
-            ><i class="fa-solid fa-message" style="color: #000000"></i
-          ></a>
+        <li><a href=""><i class="fa-solid fa-message"></i></a>
         </li>
-        <li>
-          <a href=""
-            ><i class="fa-brands fa-facebook-f" style="color: #000000"></i
-          ></a>
+        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a>
         </li>
-        <li>
-          <a href=""
-            ><i class="fa-brands fa-twitter" style="color: #000000"></i
-          ></a>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a>
         </li>
-        <li>
-          <a href=""
-            ><i class="fa-brands fa-instagram" style="color: #000000"></i
-          ></a>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a>
         </li>
       </ul>
       <p class="copyright">

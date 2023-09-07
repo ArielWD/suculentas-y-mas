@@ -1,0 +1,92 @@
+.nosotros{
+    width: 70%;
+    margin: auto auto 100px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include desktopXL{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    img{
+        width: 30%;
+        object-fit: cover;
+        @include desktopXL{
+            width: 70%;
+        }
+    }
+    p{
+        line-height: 2;
+        font-weight: 300;
+        font-size: 15px;
+        @include desktop{
+            font-size: 20px;
+            width: 80%;
+        }
+        @include tablet{
+            font-size: 15px;
+        }
+    }
+}
+.equipo{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto auto 100px auto;
+    gap: 20px;
+    
+    @include tablet{
+        width: 95% ;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__card{
+        position: relative;
+        transition: all 0.4s ease-out;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: rgba($negro, 0.6);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
+        }
+        &:hover{
+            &::before{
+                opacity: 1
+            }
+            .equipo__text{ 
+                    opacity: 1;
+                    transform: translateY(0px);
+            }
+        }
+        
+    }
+    &__imagen{
+        width: 100%;
+    }
+    &__text{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        color: $blanco;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+        z-index: 3;
+        transition: all 0.4s ease-out;
+        transform: translateY(30px);
+        @include tablet{
+            font-size: 20px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

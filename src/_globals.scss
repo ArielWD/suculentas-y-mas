@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background-color: $gris;
+    font-family:$fuente-principal
+}
+
+a{
+    text-decoration: none;
+    color: $negro;
+}
+ul{
+    list-style: none;
+}
+
+/* titulos de las paginas individuales */
+.titulo{
+    text-align: center;
+    font-size: 45px;
+    font-weight: $medio;
+    margin-bottom: 40px;
+
+    @include desktop{
+        font-size: 25px;
+        margin-bottom: 30px
+    }
+}
+.boton{
+    background-color: $principal;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color:$blanco;
+    font-size: 20px;
+    &:hover{
+        background-color: $principal-oscuro;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "suculentas-y-mas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass",
+    "sass:watch":"sass --watch src/app.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielWD/suculentas-y-mas.git"
+  },
+  "author": "Ariel Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielWD/suculentas-y-mas/issues"
+  },
+  "homepage": "https://github.com/ArielWD/suculentas-y-mas#readme",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

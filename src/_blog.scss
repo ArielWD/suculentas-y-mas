@@ -1,0 +1,37 @@
+.blog{
+    width: 70%;
+    margin: auto;
+    @include desktopXL{
+        width: 90%;
+    }
+    .blog__entrada{
+        margin-top: 25px;
+        @include telefono{
+            flex-direction: column;
+        }
+        img{
+            object-fit: contain;
+            @include telefono{
+                width: 100%;
+            }
+        }
+        h3{
+            font-size: 25px;
+            @include desktopXL{
+                font-size: 20px;
+            }
+            @include desktop{
+                font-size: 15px;
+            }
+        }
+        p{
+            font-size: 20px;
+            @include desktopXL{
+                font-size: 15px;
+            }
+            @include desktop{
+                font-size: 10px;
+            }
+        }
+    }
+}
