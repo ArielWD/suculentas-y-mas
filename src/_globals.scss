@@ -20,10 +20,15 @@ ul{
     margin-bottom: 40px;
 
     @include desktop{
-        font-size: 25px;
+        font-size: 35px;
         margin-bottom: 30px
     }
+    &--index{
+        @extend .titulo;
+        margin-bottom: 20px;
+    }
 }
+// botones
 .boton{
     background-color: $principal;
     padding: 5px 10px;
