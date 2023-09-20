@@ -114,7 +114,7 @@ ul {
 }
 .navegacion-footer__enlace {
   text-align: center;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   border-right: 0.5px solid #000;
   color: #000;
   font-size: 17px;
@@ -124,9 +124,10 @@ ul {
 .navegacion-footer__enlace:hover {
   font-weight: 700;
 }
-@media (max-width: 992px) {
+@media (max-width: 390px) {
   .navegacion-footer__enlace {
-    font-size: 10px;
+    font-size: 15px;
+    padding: 0 2px;
   }
 }
 
@@ -148,11 +149,21 @@ ul {
 .social li:hover {
   scale: 1.4;
 }
+@media (max-width: 992px) {
+  .social li {
+    font-size: 25px;
+  }
+}
 
 .copyright {
   text-align: center;
   font-size: 10px;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 992px) {
+  .copyright {
+    font-size: 15px;
+  }
 }
 
 /* Imagenes carrousel */
@@ -438,7 +449,7 @@ ul {
   }
 }
 .shop__card {
-  width: 18rem;
+  width: 70%;
   transition: scale 300ms ease-out;
   box-shadow: -8px 7px 20px -2px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: -8px 7px 20px -2px rgba(0, 0, 0, 0.69);
@@ -450,9 +461,42 @@ ul {
 .shop__item {
   background-color: #97b89d;
 }
+.shop__titulo {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .shop__titulo {
+    -webkit-line-clamp: unset;
+  }
+}
+.shop__text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .shop__text {
+    -webkit-line-clamp: unset;
+  }
+}
 .shop__enlaces {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 1500px) {
+  .shop__enlaces .boton, .shop__enlaces .formulario__submit {
+    font-size: 15px;
+  }
+}
+@media (max-width: 390px) {
+  .shop__enlaces .boton, .shop__enlaces .formulario__submit {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 .shop__precio {
   text-align: end;
@@ -471,7 +515,7 @@ ul {
 }
 @media (max-width: 1280px) {
   .blog {
-    width: 90%;
+    width: 95%;
   }
 }
 .blog .blog__entrada {
@@ -493,27 +537,16 @@ ul {
 .blog .blog__entrada h3 {
   font-size: 25px;
 }
-@media (max-width: 1280px) {
-  .blog .blog__entrada h3 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 992px) {
-  .blog .blog__entrada h3 {
-    font-size: 15px;
-  }
-}
 .blog .blog__entrada p {
-  font-size: 20px;
-}
-@media (max-width: 1280px) {
-  .blog .blog__entrada p {
-    font-size: 15px;
-  }
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .blog .blog__entrada p {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 

@@ -11,7 +11,7 @@
     }
     &__enlace{
         text-align: center;
-        padding: 0 10px 0 10px; 
+        padding: 0 10px; 
         border-right: .5px solid $negro;
         color: $negro;
         font-size: 17px;
@@ -20,8 +20,9 @@
         &:hover{
             font-weight: $bold;
         }
-        @include desktop{
-            font-size: 10px;
+        @include telefonoXS{
+            font-size: 15px;
+            padding: 0 2px; 
         }
     }
 }
@@ -43,6 +44,9 @@
         &:hover{
             scale: 1.4;
         }
+        @include desktop{
+            font-size: 25px;
+        }
     }
 }
 
@@ -50,5 +54,8 @@
     text-align: center;
     font-size: 10px;
     font-family: $fuente-principal;
+    @include desktop{
+        font-size: 15px;
+    }
 }
 
