@@ -31,14 +31,14 @@ ul {
   margin-bottom: 20px;
 }
 
-.boton, .formulario__submit {
+.boton, .error .boton-error, .formulario__submit {
   background-color: #556e46;
   padding: 5px 10px;
   border-radius: 20px;
   color: #fff;
   font-size: 20px;
 }
-.boton:hover, .formulario__submit:hover {
+.boton:hover, .error .boton-error:hover, .formulario__submit:hover {
   background-color: #708a5d;
 }
 
@@ -488,12 +488,12 @@ ul {
   justify-content: space-around;
 }
 @media (max-width: 1500px) {
-  .shop__enlaces .boton, .shop__enlaces .formulario__submit {
+  .shop__enlaces .boton, .shop__enlaces .error .boton-error, .error .shop__enlaces .boton-error, .shop__enlaces .formulario__submit {
     font-size: 15px;
   }
 }
 @media (max-width: 390px) {
-  .shop__enlaces .boton, .shop__enlaces .formulario__submit {
+  .shop__enlaces .boton, .shop__enlaces .error .boton-error, .error .shop__enlaces .boton-error, .shop__enlaces .formulario__submit {
     font-size: 12px;
     text-align: center;
   }
@@ -644,6 +644,16 @@ ul {
   width: auto;
   margin: auto;
   display: block;
+}
+.error .boton-error {
+  padding: 20px;
+  font-size: 30px;
+}
+@media (max-width: 992px) {
+  .error .boton-error {
+    padding: 10px;
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

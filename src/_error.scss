@@ -12,4 +12,14 @@
         margin: auto;
         display: block;
     }
+
+    .boton-error{
+        @extend .boton;
+        padding: 20px;
+        font-size: 30px;
+        @include desktop{
+            padding: 10px;
+            font-size: 25px;
+        }
+    }
 }
